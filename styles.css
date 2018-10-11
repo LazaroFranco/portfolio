@@ -1,11 +1,13 @@
 html {
   background: url(https://cdn.wallpapersafari.com/17/87/5uBmop.jpg);
-  background-position: center center;
-  background-size: 100%;
+  background-repeat: no-repeat;
+  background-repeat: repeat-x;
   color: black;
-  text-shadow: black;
+  display: inline-block;
   text-align: center;
-  padding-bottom: 100px;
+}
+body {
+  margin: auto;
 }
 header {
   font-family: fantasy;
@@ -13,26 +15,40 @@ header {
   text-shadow: 0 2px white;
   font-weight: bold;
   letter-spacing: 50px;
+  width: 100%;
 }
-.lazaro-franco {
+hr {
+  width: 100%;
+}
+.lazaro-franco, h1 {
     font-family: 'Assistant', sans-serif;
     font-size: 50px;
     letter-spacing: 50px;
+    max-width: inherit;
+    min-width: 200px;
 }
-ul {
-    float: right;
-	  transform: rotate(270deg);
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+img {
+  display: inline-block;
 }
+.nav {
+  list-style: none;
+  text-align: center;
 
-li a {
-
-    margin-right: 20px;
-    display: block;
-    width: 60px;
-    background-color: #dddddd;
+  position: absolute;
+  width: 130vh;
+  bottom: 0;
+  right: 32px;
+  line-height: 2em;
+  transform: rotate(90deg);
+  transform-origin: 100% 100%;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+.nav li {
+  display: inline-block;
+  margin: 0 1em;
 }
 .home {
     font-size: 10px;
@@ -41,4 +57,11 @@ li a {
     letter-spacing: 0px;
     text-decoration: none;
     padding-top: 20px;
+}
+footer{
+    font-size: 15px;
+}
+.home-p {
+  margin-top: 70px;
+  font-size: 30px;
 }
