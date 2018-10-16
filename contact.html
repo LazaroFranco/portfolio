@@ -1,71 +1,90 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-
+<html dir="ltr" lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="keywords" content="HTML, CSS, XML, XHTML, JavaScript">
-  <meta name="author" content="Lazaro Franco">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Laz is currently learning">
-  <title> Laz </title>
-  <link href="styles.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Assistant:200" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta charset="UTF-8">
+	<meta content="HTML, CSS, XML, XHTML, JavaScript" name="keywords">
+	<meta content="Lazaro Franco" name="author">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<meta content="Laz is currently learning" name="description">
+	<title>Laz</title>
+	<link href="styles.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Assistant:200" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
-
 <body>
-  <header>mi portafólio</header>
-  <ul id="drop-nav">
-    <li><a href="#">Go to...</a>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="skills.html">Skills</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="me.html">About me</a></li>
-      </ul>
-    </li>
-  </ul>
-  <hr>
-  <h1 class="contact-h1">CONTACT</h1>
-  <div>
-    <a href="skills.html" class="previous-round">&#8249; Skills</a>
-    <a href="me.html" class="next-round">About me &#8250;</a>
-  </div>
-  <h3>General Contact</h3>
-  <p class="cont-p"> Phone: <a href="tel:7176173258">717-617-3258</a>
-    <br> Email: <a href="mailto:lazaro300x@icloud.com"> Lazaro300x@icloud.com </a>
-    <br> Location: Lancaster, Pennsylvania 17602 </p>
-  <h2> Quick Message </h2>
-  <div class="container">
-    <form action="mailto:lazaro300x@icloud.com">
-      <label for="fname">First Name </label>
-      <input type="text" id="fname" name="firstname" placeholder="Your name.."><br>
-      <label for="lname">Last Name </label>
-      <input type="text" id="lname" name="lastname" placeholder="Your last name.."><br>
-      <label for="country">Countrys </label>
-      <select id="country" name="country">
-        <option value="australia">Australia </option>
-        <option value="canada">Canada </option>
-        <option value="usa">USA </option>
-        <option value="cuba">Cuba </option>
-        <option value="puerto-rico">Puerto Rico </option>
-        <option value="dominican-republic">Dominican Republic </option>
-        <option value="mexico">Mexico </option>
-      </select>
-      <label for="subject">Subject </label>
-      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px">
-    </textarea>
-      <input type="submit" value="Submit">
-    </form>
-  </div>
+	<header>
+		mi portafólio
+	</header>
+	<ul id="drop-nav">
+		<li>
+			<a href="#">Go to...</a>
+			<ul>
+				<li>
+					<a href="index.html">Home</a>
+				</li>
+				<li>
+					<a href="projects.html">Projects</a>
+				</li>
+				<li>
+					<a href="skills.html">Skills</a>
+				</li>
+				<li>
+					<a href="contact.html">Contact</a>
+				</li>
+				<li>
+					<a href="me.html">About me</a>
+				</li>
+			</ul>
+		</li>
+	</ul>
+	<hr>
+	<h1 class="contact-h1">CONTACT</h1>
+	<div>
+		<a class="previous-round" href="skills.html">&#8249; Skills</a> <a class="next-round" href="me.html">About me &#8250;</a>
+	</div>
+	<h3>General Contact</h3>
+	<p class="cont-p">Phone: <a href="tel:7176173258">717-617-3258</a><br>
+	Email: <a href="mailto:lazaro300x@icloud.com">Lazaro300x@icloud.com</a><br>
+	Location: Lancaster, Pennsylvania 17602</p>
+	<h2>Quick Message</h2>
+	<div class="container">
+		<form action="mailto:lazaro300x@icloud.com">
+			<label for="fname">First Name</label> <input id="fname" name="firstname" placeholder="Your name.." type="text"><br>
+			<label for="lname">Last Name</label> <input id="lname" name="lastname" placeholder="Your last name.." type="text"><br>
+			<label for="country">Countrys</label> <select id="country" name="country">
+				<option value="australia">
+					Australia
+				</option>
+				<option value="canada">
+					Canada
+				</option>
+				<option value="usa">
+					USA
+				</option>
+				<option value="cuba">
+					Cuba
+				</option>
+				<option value="puerto-rico">
+					Puerto Rico
+				</option>
+				<option value="dominican-republic">
+					Dominican Republic
+				</option>
+				<option value="mexico">
+					Mexico
+				</option>
+			</select> <label for="subject">Subject</label>
+			<textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea> <input type="submit" value="Submit">
+		</form>
+	</div>
+	<footer>
+		<details>
+			<summary>
+				Copyright 2018.
+			</summary>
+			<p>- by Lazaro Rafael Franco Valdes. All Rights Reserved.</p>
+			<p>All content and graphics on this web site are the property of the company Lazaro Franco.</p>
+		</details>
+	</footer>
 </body>
-<footer>
-  <details>
-    <summary>Copyright 2018. </summary>
-    <p> - by Lazaro Rafael Franco Valdes. All Rights Reserved. </p>
-    <p>All content and graphics on this web site are the property of the company Lazaro Franco. </p>
-  </details>
-</footer>
-
 </html>
