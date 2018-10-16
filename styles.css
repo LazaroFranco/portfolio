@@ -1,4 +1,3 @@
-@media only screen and (min-width: 600px) {
 html {
   background: url(https://cdn.wallpapersafari.com/17/87/5uBmop.jpg);
   background-repeat: no-repeat;
@@ -18,6 +17,17 @@ header {
   font-weight: bold;
   letter-spacing: 50px;
   width: 100%;
+}
+section {
+background: -moz-linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(0,255,255,1) 100%); /* ff3.6+ */
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(0,255,255,1))); /* safari4+,chrome */
+  background: -webkit-linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(0,255,255,1) 100%); /* safari5.1+,chrome10+ */
+  background: -o-linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(0,255,255,1) 100%); /* opera 11.10+ */
+  background: -ms-linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(0,255,255,1) 100%); /* ie10+ */
+  background: linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(0,255,255,1) 100%); /* w3c */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffff', endColorstr='#ffffff',GradientType=1 ); /* ie6-9 */
+border-top-right-radius: 20px;
+border-top-left-radius: 20px;
 }
 
 a {
@@ -364,15 +374,6 @@ h3 {
   top: 50px;
   font-size: 30px;
 }
-.previous-round {
-  color: black;
-  float: left;
-  display: flex;
-  justify-content: space-around;
-  position: relative;
-  top: 50px;
-  font-size: 30px;
-}
 .previous-round:hover {
   text-decoration: underline;
   float: left;
@@ -458,20 +459,7 @@ div#slider figure {
     text-align: center;
     margin-left: 10%;
     width: 80%;
-    height: 135em;
-  }
-
-  section {
-    background: -moz-linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(0,255,255,1) 100%); /* ff3.6+ */
-      background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(0,255,255,1))); /* safari4+,chrome */
-      background: -webkit-linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(0,255,255,1) 100%); /* safari5.1+,chrome10+ */
-      background: -o-linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(0,255,255,1) 100%); /* opera 11.10+ */
-      background: -ms-linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(0,255,255,1) 100%); /* ie10+ */
-      background: linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(0,255,255,1) 100%); /* w3c */
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffff', endColorstr='#ffffff',GradientType=1 ); /* ie6-9 */
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
-    padding: 2px;
+    height: 200%;
   }
 
   .hello {
@@ -501,22 +489,12 @@ div#slider figure {
     margin-top: 5px;
   }
   .me-p {
-    font: 20px 'AmericanTypewriter', Cambria, Georgia; color: #282625; margin: 0 auto; width: 600px;
+    font: 20px 'AmericanTypewriter', Cambria, Georgia;
+    color: #282625; margin: 0 auto;
   }
-
-}
 
 /* small screen styles here */
 @media only screen and (max-width: 600px) {
-html {
-  background: url(https://cdn.wallpapersafari.com/17/87/5uBmop.jpg);
-  background-repeat: no-repeat;
-  background-repeat: repeat-x;
-  color: black;
-  text-align: center;
-  width: 100%;
-  height: 100%;
-}
 
 section {
   display: inline;
@@ -529,222 +507,17 @@ section {
   width: 100%;
 }
 
-a {
-  text-decoration: none;
-  text-decoration-style: none;
-}
-
-hr {
-  width: 100%;
-}
-
 h1 {
-  font-family: 'Assistant', sans-serif;
-  font-size: 50px;
   letter-spacing: 20px;
 }
 
-img {
-  display: inline;
-}
-
-ul {
-  display: inline;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-ul li {
-  font-size: 20px;
-  display: block;
-  position: relative;
-  float: left;
-}
-
-li ul {
-  display: none;
-}
-
-ul li a {
-  display: block;
-  padding: 5px 10px 5px 10px;
-  text-decoration: none;
-  white-space: nowrap;
-  color: black;
-}
-
-ul li a:hover {
-  background: none;
-}
-
-li:hover ul {
-  display: block;
-  position: absolute;
-}
-
-li:hover li {
-  float: none;
-}
-
-li:hover a {
-  background: none;
-}
-
-li:hover li a:hover {
-  text-decoration: underline;
-  background: none;
-  font-size: 50px;
-  color: black;
-  font-weight: bolder;
-}
-
-#drop-nav li ul li {
-  margin-top: 40px;
-  border-top: 0;
-}
-
-.nav ul {
-  display: flex;
-  justify-content: space-around;
-  list-style: none;
-  background-color: none;
-  text-align: center;
-  padding: 0;
-}
-
 .nav li {
-  font-family: 'Oswald', sans-serif;
-  font-size: 1.4em;
-  line-height: 50px;
-  height: 50px;
   margin: 0;
-  width: 120px;
-  border-bottom: none;
-}
-
-.navbar a {
-  font-size: 10px;
-  font-family: sans-serif;
-  letter-spacing: 0;
-  text-decoration: none;
-  padding-top: 20px;
-}
-
-.nav a {
-  text-decoration: none;
-  display: block;
-  transition: 0.3s;
-}
-
-.nav a:hover {
-  text-decoration: underline;
-  background-color: none;
-  color: black;
-}
-
-.nav .active {
-  cursor: default;
-}
-
-.home {
-  font-size: 10px;
-  font-family: sans-serif;
-  float: left;
-  letter-spacing: 0;
-  text-decoration: none;
-  padding-top: 20px;
-  margin-left: 50px;
-  margin-right: 50px;
-}
-
-.home-p {
-  margin-top: 70px;
-  font-size: 30px;
-}
-
-.navbar {
-  font-size: 10px;
-  font-family: sans-serif;
-  float: left;
-  letter-spacing: 0;
-  text-decoration: none;
-  padding-top: 20px;
-}
-
-.dropbtn {
-  background-color: none;
-  color: black;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-}
-
-.dropdown {
-  text-align: center;
-  display: block;
-  margin-bottom: 20px;
-}
-
-.skills-p {
-  font-size: 25px;
-  font-family: 'Bai Jamjuree', sans-serif;
-}
-
-
-
-.dropdown-content a {
-  background-color: #ddd;
 }
 
 .dropdown .dropdown-content {
   display: block;
-}
-
-.dropdown:hover .dropbtn {
-  text-decoration: underline;
-}
-
-input[type=text],
-select,
-textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-}
-
-input[type=submit] {
-  background-color: #443dee;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-input[type=submit]:hover {
-  background-color: inherit;
-  text-decoration: underline;
-  color: black;
-}
-
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-.cont-p {
-  font-size: 20px;
+  background: none;
 }
 
 h3 {
@@ -755,180 +528,38 @@ h3 {
   font-size: 75px;
 }
 /* SKILLS PAGE!!!!!!!!!!!!! */
-.skills-h3 {
-  background: -moz-linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(0,255,255,1) 100%); /* ff3.6+ */
-  background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(0,255,255,1))); /* safari4+,chrome */
-  background: -webkit-linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(0,255,255,1) 100%); /* safari5.1+,chrome10+ */
-  background: -o-linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(0,255,255,1) 100%); /* opera 11.10+ */
-  background: -ms-linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(0,255,255,1) 100%); /* ie10+ */
-  background: linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(0,255,255,1) 100%); /* w3c */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffff', endColorstr='#ffffff',GradientType=1 ); /* ie6-9 */
-}
 
-.dropdown-content {
-  text-align: center;
-  display: none;
-  min-width: 160px;
-  box-shadow: 0 8px 16px 0 rgba(0 0 0 0.2);
-  z-index: 1;
-}
-.skills-list {
-  list-style-type: none;
-  text-align: center;
-}
-
-.skills-list p {
-  font-family: 'Mali', cursive;
-}
-
-.skills-h3 {
-  font-family: 'Montserrat', sans-serif;
-}
 
 /* PROJECTS PAGE!!!!!!!!!!!!! */
 
-.projects-h2 {
-  display: block;
-}
-
-.projects-list p {
-  font-size: 20px;
-}
-
-.project-img {
-  height: 75%;
-  width: 75%;
-  border-style: solid;
-  border-width: 5px;
-}
-
-.project-a {
-  color: #383838;
-  font-family: 'Assistant', sans-serif;
-  font-weight: bold;
-}
-
-.project-a:hover {
-  text-decoration: underline;
-  background-color: none;
-  color: black;
-}
-
 .next-round {
-  float: right;
-  display: flex;
-  justify-content: space-around;
-  position: relative;
   top: 20px;
-  font-size: 30px;
-}
-
-.next-round:hover {
-  float: right;
-  text-decoration: underline;
 }
 
 .previous-round {
-  float: left;
-  display: flex;
-  justify-content: space-around;
-  position: relative;
   top: 20px;
-  font-size: 30px;
-}
-
-.previous-round:hover {
-  text-decoration: underline;
-  float: left;
-  right: 0;
-  left: 902;
-  bottom: 242;
-  top: 242;
 }
 
 /* ABOUT ME PAGE!!!!!!!!!!!!!!!!!! */
 
 .football-picture {
-  display: inline;
-  width: 400px;
-  height: 350px;
-}
-
-@keyframes slidy {
-  0% { left: 0%; }
-  20% { left: 0%; }
-  25% { left: -100%; }
-  45% { left: -100%; }
-  50% { left: -200%; }
-  70% { left: -200%; }
-  75% { left: -300%; }
-  95% { left: -300%; }
-  100% { left: -400%; }
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-}
-
-footer {
-  display: block;
-  font-size: 15px;
-}
-
-div#slider {
-  overflow: hidden;
-}
-
-div#slider figure img {
-  width: 20%;
-  float: left;
-}
-
-div#slider figure {
-  position: relative;
-  width: 500%;
-  margin: 0;
-  left: 0;
-  text-align: left;
-  font-size: 0;
-  animation: 20s slidy infinite;
+  width: 100px;
+  height: 100px;
 }
 
 h1 {
   font-size: 100px;
 }
 
-.me-h1 {
-  font-family: 'Gloria Hallelujah', cursive;
-  letter-spacing: 5px;
-  font-size: 75px;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.home-p {
-  margin-left: 200px;
-  margin-right: 200px;
-}
 .tag {
-  border-radius: 20px;
   border: 4px solid black;
-  margin-left: 10%;
-  width: 75%;
-  height: 100%;
-}
-
-section {
-  border-top-right-radius: 20px;
-  border-top-left-radius: 20px;
-  padding: 2px;
+  width: 100%;
+  height: 250%;
+  border-bottom: 100%;
+  margin: 0;
 }
 
 .hello {
-  font-family: sans-serif;
   font-weight: bold;
   text-align: center;
   font-size: 60px;
@@ -946,5 +577,8 @@ section {
   border-top: 3px dotted black;
   margin-top: 20px;
 }
-
+.me-p {
+  margin-right: 0px;
+  margin-left: 10px;
+}
 }
