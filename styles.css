@@ -66,6 +66,53 @@ img {
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
+.navybtn {
+  background-color: inherit;
+  color: black;
+  padding: 5px;
+  font-size: 50px;
+  border: none;
+  cursor: pointer;
+}
+
+.navydown {
+  position: relative;
+  display: inline-block;
+}
+
+.navydown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background: url(https://t3.ftcdn.net/jpg/01/19/54/60/240_F_119546077_ZO9cnFGZSeUDPYmTwAYuqVm6zh99MAPm.jpg);
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 inherit;
+  z-index: 1;
+}
+
+.navydown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.navydown-content a:hover {
+  font-size: 30px;
+  padding-right: 50%;
+  padding-top: 15%;
+  padding-bottom: 15%;
+  background-color: #f1f1f1;
+}
+
+.navydown:hover .navydown-content {
+  display: block;
+}
+
+.navydown:hover .navybtn {
+  background-color: inherit;
+}
+
 .nav a {
   text-decoration: none;
   display: block;
@@ -213,11 +260,20 @@ li:hover li a:hover {
 }
 
 .skills-p {
-  font-size: 25px;
+  font-size: 3em;
   font-family: 'Bai Jamjuree', sans-serif;
-  margin-left: 200px;
-  margin-right: 200px;
+  margin-left: 25%;
+  margin-right: 25%;
   margin-bottom: 0;
+}
+
+.dropdown-content {
+  text-align: center;
+  display: none;
+  color: white;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0 0 0 0.2);
+  z-index: 1;
 }
 
 .dropdown:hover .dropdown-content {
@@ -275,18 +331,6 @@ h3 {
 }
 
 /* SKILLS PAGE!!!!!!!!!!!!! */
-
-.skills-h3 {
-}
-
-.dropdown-content {
-  text-align: center;
-  display: none;
-  color: white;
-  min-width: 160px;
-  box-shadow: 0 8px 16px 0 rgba(0 0 0 0.2);
-  z-index: 1;
-}
 
 .skills-list {
   list-style-type: none;
@@ -521,12 +565,18 @@ div#slider figure {
     letter-spacing: 10px;
     width: 100%;
   }
+
   html {
+    height: 100%;
     width: 700px;
   }
-body {
-  width: 700px;
-}
+
+  body {
+    min-height: 100%;
+    width: 700px;
+    padding-bottom: 20px;
+  }
+
   h1 {
     font-size: 100px;
     letter-spacing: 20px;
@@ -597,5 +647,10 @@ body {
   .me-p {
     margin-right: 0;
     margin-left: 10px;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
   }
 }
