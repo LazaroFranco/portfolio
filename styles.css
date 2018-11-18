@@ -42,24 +42,33 @@ h1 {
   font-size: 50px;
   letter-spacing: 50px;
 }
+.webdev {
+  font-style: italic;
+  letter-spacing: 20px;
+}
 
 img {
+  margin-top: 2em;
   display: inline;
 }
 
 .fa-instagram {
+  margin-left: 50px;
+  margin-right: 50px;
   display: block;
   background-color: inherit;
   color: purple;
 }
 
 .fa-linkedin {
+  margin-left: 50px;
   display: block;
   background: inherit;
   color: blue;
 }
 
 .fa-snapchat-ghost {
+  margin-right: 50px
   display: block;
   background: inherit;
   color: yellow;
@@ -231,6 +240,7 @@ li:hover li a:hover {
 
 .home-p {
   margin-top: 70px;
+  margin-bottom: 70px;
   margin-left: 200px;
   margin-right: 200px;
   font-size: 30px;
@@ -562,6 +572,11 @@ div#slider figure {
   h1 {
     font-size: 100px;
     letter-spacing: 20px;
+    margin-top: 2em;
+  }
+  
+  .nav {
+    margin-bottom: 3em;
   }
 
   .nav li {
