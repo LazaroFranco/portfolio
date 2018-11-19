@@ -68,7 +68,7 @@ img {
 }
 
 .fa-snapchat-ghost {
-  margin-right: 50px
+  margin-right: 50px;
   display: block;
   background: inherit;
   color: yellow;
@@ -574,7 +574,7 @@ div#slider figure {
     letter-spacing: 20px;
     margin-top: 2em;
   }
-  
+
   .nav {
     margin-bottom: 3em;
   }
