@@ -561,7 +561,7 @@ div#slider figure {
   }
 
   html {
-    height: 100vh;
+    height: 100%;
     width: 700px;
   }
 
