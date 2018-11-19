@@ -326,6 +326,7 @@ input[type=submit]:hover {
 }
 
 .container {
+  margin-left: 15%;
   margin-right: 15%;
   border-radius: 5px;
   background-color: #f2f2f2;
