@@ -20,7 +20,7 @@ body {
   margin-bottom: 50%;
   padding: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
 }
 
 section {
@@ -561,11 +561,12 @@ div#slider figure {
   }
 
   html {
-    height: 100%;
+    height: 100vh;
     width: 700px;
   }
 
   body {
+    height: 100vh;
     min-height: 100%;
     width: 700px;
     padding-bottom: 20px;
