@@ -390,6 +390,7 @@ h3 {
 }
 
 .next-round {
+  margin: 1em;
   float: right;
   display: flex;
   justify-content: space-around;
@@ -405,6 +406,7 @@ h3 {
 }
 
 .previous-round {
+  margin: 1em;
   color: black;
   float: left;
   display: flex;
