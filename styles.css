@@ -53,22 +53,22 @@ img {
 }
 
 .fa-instagram {
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
   display: block;
   background-color: inherit;
   color: purple;
 }
 
 .fa-linkedin {
-  margin-left: 50px;
+  margin-left: 20px;
   display: block;
   background: inherit;
   color: blue;
 }
 
 .fa-snapchat-ghost {
-  margin-right: 50px;
+  margin-right: 20px;
   display: block;
   background: inherit;
   color: yellow;
@@ -390,6 +390,7 @@ h3 {
 }
 
 .next-round {
+  margin: 1em;
   float: right;
   display: flex;
   justify-content: space-around;
@@ -405,6 +406,7 @@ h3 {
 }
 
 .previous-round {
+  margin: 1em;
   color: black;
   float: left;
   display: flex;
