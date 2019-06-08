@@ -463,6 +463,16 @@ h3 {
   }
 }
 
+table {
+  margin: auto;
+}
+
+tr, td {
+  border-bottom: black;
+  border-bottom-width: thin;
+  border-bottom-style: inset;
+}
+
 footer {
   display: block;
   font-size: 15px;
