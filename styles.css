@@ -1,3 +1,52 @@
+.slider-wrapper {
+  font-size: 40px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider {
+  height: 50px;
+  overflow: hidden;
+  padding: 0 10px;
+}
+
+.slider > div {
+  box-sizing: border-box;
+  color: black;
+  height: 50px;
+  margin-bottom: 50px;
+  padding: 0 10px;
+  text-align: center;
+}
+
+.text1 {
+  background-color: inherit;
+  font-style: italic;
+  letter-spacing: 30px;
+  color: black;
+  animation: slide 5s linear infinite;
+}
+
+.text2 {
+  background-color: inherit;
+  font-style: italic;
+  letter-spacing: 30px;
+  color: black;
+  background-color: inherit;
+}
+
+@keyframes slide {
+  0% { margin-top: -300px; }
+  5% { margin-top: -200px; }
+  33% { margin-top: -200px; }
+  38% { margin-top: -100px; }
+  66% { margin-top: -100px; }
+  72% { margin-top: -0; }
+  100% { margin-top: 0; }
+}
+
 header {
   display: inline;
   font-size: 2em;
@@ -20,6 +69,54 @@ body {
   margin-bottom: 50%;
   padding: 0;
   width: 100%;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono);
+
+.hidden {
+  opacity:0;
+}
+.console-container {
+  font-family:Ubuntu Mono, monospace;
+  font-weight:300;
+  font-size:80px;
+  text-align:left;
+  height:200px;
+  width:800px;
+  display:block;
+  position:absolute;
+  color: black;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  margin:auto;
+  padding: 0 30px;
+  text-transform: uppercase;
+  letter-spacing: -0.5px;
+}
+h2{
+  font-size:60px;
+  color: black;
+  margin:0;
+  letter-spacing: 1px;
+}
+.console-underscore {
+   display:inline-block;
+  position:relative;
+  top:-0.14em;
+  left:10px;
+}
+#text{
+  font-size: 80px;
+        font-weight: 400;
+        color: black;
+        background-image: linear-gradient(-90deg, #FF0076, #FF003B);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
+.console-underscore{
+  color: black;
 }
 
 section {
@@ -329,7 +426,7 @@ input[type=submit]:hover {
   margin-left: 15%;
   margin-right: 15%;
   border-radius: 5px;
-  background-color: #f2f2f2;
+  background-color: inherit;
   padding: 20px;
 }
 
@@ -423,6 +520,20 @@ h3 {
   left: 902;
   bottom: 242;
   top: 242;
+}
+
+.btn {
+  background-color: inherit;
+  border: none;
+  color: black;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 30px;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
 }
 
 /* ABOUT ME PAGE!!!!!!!!!!!!!!!!!! */
