@@ -1,3 +1,5 @@
+
+
 // function([string1, string2],target id,[color1,color2])    
  consoleText(['Computer Programmer', 'Website Developer'], 'text',['black']);
 
@@ -49,3 +51,6 @@ function consoleText(words, id, colors) {
     }
   }, 200)
 }
+
+
+
