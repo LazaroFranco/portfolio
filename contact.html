@@ -41,22 +41,31 @@
 	<h3>General Contact</h3>
 	<p class="cont-p">Phone: <a href="tel:7176173258">717-617-3258</a><br> Email: <a href="mailto:lazaro300x@icloud.com">Lazaro300x@icloud.com</a><br> Location: Lancaster, Pennsylvania 17602</p>
 	<h2>Quick Message</h2>
-	<div class="container">
-		<form action="mailto:lazaro300x@icloud.com">
-			<label for="fname">First Name</label> <input id="fname" name="firstname" placeholder="Your name.." type="text"><br>
-			<label for="lname">Last Name</label> <input id="lname" name="lastname" placeholder="Your last name.." type="text"><br>
-			<label for="country">Country</label> <select id="country" name="country">
-				<option value="australia"> Australia </option>
-				<option value="canada"> Canada </option>
-				<option value="usa"> USA </option>
-				<option value="cuba"> Cuba </option>
-				<option value="puerto-rico"> Puerto Rico </option>
-				<option value="dominican-republic"> Dominican Republic </option>
-				<option value="mexico"> Mexico </option>
-			</select> <label for="subject">Subject</label>
-			<textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea> <input type="submit" value="Submit">
-		</form>
-	</div>
+        <div class="container">
+<form method="POST" action="https://formspree.io/lazaro300x@icloud.com">
+      <div class="row">
+      <div class="col-sm-6">
+      <div class="form-group">
+      <label class="fname">Your Name *</label>
+      <input id="first_name" name="name" type="text" class="form-control" required="">
+      </div>
+      </div>
+      <div class="col-sm-6">
+      <div class="form-group">
+      <label>Your Email *</label>
+      <input id="email" type="text" name="email" class="form-control">
+      </div>
+      </div>
+      <div class="col-sm-12">
+      <div class="form-group">
+      <label>Your Message *</label>
+      <textarea name="message" class="form-control" rows="6"></textarea>
+      </div>
+      <input type="submit" value="Send" class="btn btn-default">
+      </div>
+      </div>
+    </div>
+      </form></div>
 	<footer>
 		<details>
 			<summary> Copyright 2018. </summary>

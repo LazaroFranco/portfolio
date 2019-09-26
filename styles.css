@@ -32,7 +32,7 @@
 .text2 {
   background-color: inherit;
   font-style: italic;
-  letter-spacing: 30px;
+  letter-spacing: 30px;
   color: black;
   background-color: inherit;
 }
@@ -166,9 +166,19 @@ img {
 
 .fa-snapchat-ghost {
   margin-right: 20px;
+  margin-left: 20px;
   display: block;
   background: inherit;
   color: yellow;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.fa-github {
+  margin-right: 20px;
+  margin-left: 20px;
+  display: block;
+  background: inherit;
+  color: #222;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
@@ -491,7 +501,7 @@ h3 {
   float: right;
   display: flex;
   justify-content: space-around;
-  position: relative;
+  position: inherit;
   top: 50px;
   font-size: 30px;
   color: black;
@@ -508,7 +518,7 @@ h3 {
   float: left;
   display: flex;
   justify-content: space-around;
-  position: relative;
+  position: inherit;
   top: 50px;
   font-size: 30px;
 }
