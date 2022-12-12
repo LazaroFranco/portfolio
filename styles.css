@@ -44,7 +44,9 @@
   from{ bottom:-100px; opacity:0 } 
   to{ bottom:0; opacity:1 }
 }
-
+.p {
+ width: 36rem;
+}
 #myDiv {
   display: none;
   text-align: center;
