@@ -63,8 +63,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border-bottom: groove;
-  border-bottom-width: thick;
 }
 
 .slider {
@@ -192,12 +190,14 @@ a {
 
 hr {
   width: 100%;
+  border-block-color: orange;
 }
 
 h1 {
   font-family: 'Righteous', serif, system-ui;
   font-size: 5em;
   letter-spacing: .8em;
+
 }
 
 .webdev {
@@ -300,11 +300,12 @@ img {
   background-color: #FF5A09;
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 25% 35%;
   text-decoration: none;
   display: inline-block;
   margin: 4px 2px;
   border-radius: 8px;
+
 }
 
 ul {
@@ -670,6 +671,7 @@ tr, td {
 footer {
   display: block;
   font-size: 15px;
+  margin-top: 75%;
 }
 
 div#slider {
