@@ -300,7 +300,6 @@ ul {
 }
 
 ul li {
-  font-size: 20px;
   display: block;
   position: relative;
   float: left;
@@ -331,13 +330,29 @@ li:hover li {
   float: none;
 }
 
+.nav a {
+  text-decoration: none;
+  display: block;
+  transition: 0.3s;
+  border: none;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  border-radius: 8px;
+  border-left: groove orange;
+  border-right: groove orange;
+  margin-bottom: 3em;
+  font-size: 2em;
+  padding: 1em;
+}
+
 .nav a:hover {
   transition: 0.3s;
-  background-color: #FF5A09;
+  background-color: orange;
   color: white;
   display: block;
   border-radius: 8px;
-  padding: 25% 35%;
   width: 10em;
   margin-bottom: 3em;
 }
@@ -357,7 +372,7 @@ li:hover li a:hover {
 }
 
 .nav ul {
-  display: grid;
+  display: inline-block;
   justify-content: space-around;
   text-align: center;
   justify-items: end;
@@ -365,6 +380,7 @@ li:hover li a:hover {
 
 .nav li {
   font-family: 'Oswald', sans-serif;
+  margin: 5em;
 }
 
 .navbar a {
@@ -373,18 +389,6 @@ li:hover li a:hover {
   letter-spacing: 0;
   text-decoration: none;
   padding-top: 20px;
-}
-
-.nav a {
-  transition: 0.3s;
-  background-color: #FF5A09;
-  color: white;
-  display: inline-block;
-  border-radius: 8px;
-  padding: 50px 50px;
-  width: 10em;
-  margin-bottom: 3em;
-  font-size: 2em;
 }
 
 .nav .active {
@@ -739,7 +743,7 @@ div#slider figure {
 
 /* small screen styles here */
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 1000px) {
   section {
     display: inline;
     font-size: 10px;
@@ -753,13 +757,13 @@ div#slider figure {
 
   html {
     height: 200%;
-    width: 700px;
+    width: 1000;
   }
 
   body {
     height: 100vh;
     min-height: 100%;
-    width: 700px;
+    width: 1000;
     padding-bottom: 20px;
   }
 
@@ -850,4 +854,22 @@ div#slider figure {
   li a {
 
   }
+
+    .nav a {
+      border-left: groove orange;
+      border-right: groove orange;
+      transition: 0.3s;
+      color: white;
+      display: inline-block;
+      border-radius: 8px;
+      width: 10em;
+      margin-bottom: 3em;
+      font-size: 2em;
+    }
+  .nav ul {
+    display: grid;
+    justify-content: space-around;
+    text-align: center;
+    justify-items: end;
+ }
 }
