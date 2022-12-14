@@ -125,7 +125,6 @@ body {
   color: rgb(226, 226, 226);
   text-align: center;
   margin: 0;
-  margin-bottom: 50%;
   padding: 0;
   width: 100%;
 }
@@ -293,21 +292,6 @@ img {
   background-color: inherit;
 }
 
-.nav a {
-  text-decoration: none;
-  display: block;
-  transition: 0.3s;
-  background-color: #FF5A09;
-  border: none;
-  color: white;
-  padding: 25% 35%;
-  text-decoration: none;
-  display: inline-block;
-  margin: 4px 2px;
-  border-radius: 8px;
-
-}
-
 ul {
   display: inline;
   list-style: none;
@@ -324,15 +308,6 @@ ul li {
 
 li ul {
   display: none;
-}
-
-ul li a {
-  display: block;
-  padding: 5px 10px 5px 10px;
-  text-decoration: none;
-  rgb(226, 226, 226)-space: nowrap;
-  background-color: inherit;
-  color: rgb(226, 226, 226);
 }
 
 .dropdown-content a:hover {
@@ -357,10 +332,14 @@ li:hover li {
 }
 
 .nav a:hover {
-  text-decoration: underline;
-  background-color: none;
-  color: rgb(226, 226, 226);
-  font-size: 40px;
+  transition: 0.3s;
+  background-color: #FF5A09;
+  color: white;
+  display: block;
+  border-radius: 8px;
+  padding: 25% 35%;
+  width: 10em;
+  margin-bottom: 3em;
 }
 
 li:hover li a:hover {
@@ -378,22 +357,14 @@ li:hover li a:hover {
 }
 
 .nav ul {
-  display: flex;
+  display: grid;
   justify-content: space-around;
-  list-style: none;
-  background-color: none;
   text-align: center;
-  padding: 0;
+  justify-items: end;
 }
 
 .nav li {
   font-family: 'Oswald', sans-serif;
-  font-size: 1.4em;
-  line-height: 50px;
-  height: 50px;
-  margin: 0 1em;
-  width: 120px;
-  border-bottom: none;
 }
 
 .navbar a {
@@ -402,6 +373,18 @@ li:hover li a:hover {
   letter-spacing: 0;
   text-decoration: none;
   padding-top: 20px;
+}
+
+.nav a {
+  transition: 0.3s;
+  background-color: #FF5A09;
+  color: white;
+  display: inline-block;
+  border-radius: 8px;
+  padding: 50px 50px;
+  width: 10em;
+  margin-bottom: 3em;
+  font-size: 2em;
 }
 
 .nav .active {
@@ -508,7 +491,7 @@ input[type=submit]:hover {
 .container {
   margin-left: 15%;
   margin-right: 15%;
-  margin-bottom: 15em;
+  margin-bottom: 5%;
   border-radius: 5px;
   background-color: inherit;
   padding: 20px;
@@ -670,8 +653,8 @@ tr, td {
 
 footer {
   display: block;
-  font-size: 15px;
-  margin-top: 75%;
+  font-size: 1em;
+  margin-top: 25%;
 }
 
 div#slider {
@@ -862,5 +845,9 @@ div#slider figure {
   * {
     margin: 0;
     padding: 0;
+  }
+
+  li a {
+
   }
 }
