@@ -127,6 +127,7 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
+  background-attachment: fixed;
 }
 
 @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono);
@@ -425,20 +426,24 @@ li:hover li a:hover {
 
 .dropbtn {
   background-color: inherit;
-  color: rgb(226, 226, 226);
+  color: bisque;
   padding: 16px;
   font-size: 16px;
   border: none;
+  border-left: groove orange;
+  border-right: groove orange;
+  border-radius: 1em;
 }
 
 .dropdown {
   text-align: center;
   display: block;
   margin-bottom: 20px;
+  margin-top: 3em;
 }
 
 .skills-p {
-  font-size: 3em;
+  font-size: 1.6em;
   font-family: 'Bai Jamjuree', sans-serif;
   margin-left: 25%;
   margin-right: 25%;
@@ -458,10 +463,6 @@ li:hover li a:hover {
   display: block;
 }
 
-.dropdown:hover .dropbtn {
-  text-decoration: underline;
-}
-
 input[type=text],
 select,
 textarea {
@@ -476,15 +477,17 @@ textarea {
 }
 
 input[type=submit] {
-  background: url(https://t3.ftcdn.net/jpg/01/19/54/60/240_F_119546077_ZO9cnFGZSeUDPYmTwAYuqVm6zh99MAPm.jpg);
-  background-size: contain;
   color: rgb(226, 226, 226);
   background-position-x: center;
   background-position-y: center;
   padding: 12px 20px;
   border: none;
-  border-radius: 4px;
   cursor: pointer;
+  border-radius: 8px;
+  border-left: groove orange;
+  border-right: groove orange;
+  margin-bottom: 3em;
+  font-size: 3em;
 }
 
 input[type=submit]:hover {
@@ -507,6 +510,7 @@ input[type=submit]:hover {
 
 .cont-p {
   font-size: 20px;
+  margin-top: 3em;
 }
 
 h3 {
@@ -756,7 +760,6 @@ div#slider figure {
   }
 
   html {
-    height: 200%;
     width: 1000;
   }
 
@@ -770,7 +773,7 @@ div#slider figure {
   h1 {
     font-size: 100px;
     letter-spacing: 20px;
-    margin-top: 2em;
+    margin-top: .5em;
   }
 
   .nav {
@@ -782,7 +785,7 @@ div#slider figure {
   }
 
   .dropdown .dropdown-content {
-    display: block;
+    display: none;
     background: none;
   }
 
@@ -872,4 +875,8 @@ div#slider figure {
     text-align: center;
     justify-items: end;
  }
+
+  #h3button {
+    margin-top: 7em;
+  }
 }
